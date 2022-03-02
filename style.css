@@ -1,0 +1,160 @@
+body{
+    width: 100vw;
+    margin-top: 2.5%;
+    text-align: center;
+    align-items: center;
+    background-color: #e6edf7;
+}
+
+nav{
+    background-color:#1d0a40;
+    position: fixed;
+    right: 0;
+    left: 0;
+    z-index: 1;
+    top: 0;
+}
+
+.nav-link{
+    color: #dad3e6;
+}
+
+.overview{
+    background-color: #ccd8eb;
+    margin-bottom: 5%;
+}
+
+h1{
+    padding: 0.5rem;
+    font-weight: bolder;
+    font-family: 'Montserrat Alternates', sans-serif;
+}
+
+h2{
+    padding-bottom: 10px;
+    font-family: 'Oxygen mono', monospace;
+}
+
+h3{
+    font-size: 1.5rem;
+}
+
+p, pre{
+    font-family: 'Oxygen Mono', monospace;
+}
+
+.overview pre{
+    text-align: left;
+    margin-left: 23%;
+    padding-block: 2%;
+    font-size: 20px;
+}
+
+.skill-unit h3:hover{
+    color: rgb(211, 225, 255);
+    font-weight: bolder;
+}
+
+.skills{
+    text-align: center;
+    background: grey;
+    margin-left: 25%;
+    width: 50%;
+    border-radius: 0.4rem;
+    box-shadow: 0.5rem 0.5rem grey;
+    transition: all 300ms ease;
+}
+
+.skills:hover{
+    box-shadow: none;
+}
+
+.skill-unit{
+    display: grid;
+    gap: 2rem;
+    grid-template-columns: 20% 20% 20% 20%;
+    text-align: center;
+    transition: all 300ms ease;
+}
+
+.sample-project{
+    padding-top: 5%;
+}
+
+.sample-project > h1{
+    color: rgb(255, 234, 42);
+    position: absolute;
+    background-color: #3d385396;
+    top: 95%;
+    z-index: 2s;
+    width: 100vw;
+}
+
+.personzoid{
+    padding-top: 3%;
+    background-color: black;
+    display: grid;
+    grid-template-columns: 45% 55%;
+}
+
+.personzoid-exp{
+    text-align: left;
+    margin: 2rem 5rem;
+    color: antiquewhite;
+}
+
+.carousel{
+    color: black;
+    margin: 2rem;
+}
+
+.carousel-control-next{
+    position: absolute;
+    font-weight: bolder;
+    right: 15%;
+}
+
+.carousel-control-prev{
+    position: absolute;
+    font-weight: bolder;
+    left: -10%
+}
+
+.personzoid-exp p{
+    word-wrap: break-word;
+}
+
+.dessertlux{
+    background-color: #0c2345;
+    display: grid;
+    grid-template-columns: 55% 45%;
+}
+
+.dessertlux-imgs{
+    margin-left: 10rem;
+    width: 100%;
+}
+
+
+.dessertlux-exp{
+    padding-top: 5%;
+    word-wrap: break-word;
+    color: #fff58a;
+    text-align: left;
+}
+
+a{
+    text-decoration: none;
+    padding: 3%;
+    color: black;
+}
+
+.call-button{
+    font-size: 1.8rem;
+    font-weight: bolder;
+    position: absolute;
+}
+
+footer{
+    padding-top: 5%;
+}
