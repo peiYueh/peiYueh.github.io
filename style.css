@@ -1,3 +1,53 @@
+  @media(max-width: 400px) {
+    h1{
+        font-size: 30px;
+        width: 100%;
+    }
+    nav{
+        padding-right: 40px;
+    }
+    .overview{
+        align-items: center;
+    }
+    .overview > h1{
+        padding-top: 50px;
+    }
+    .overview-text{
+        font-size: 10px;
+        word-wrap: break-word;
+        overflow-x: hidden;
+        width: 350px;
+        padding-left: 15px;
+    }
+
+    .card-header > h2{
+        font-size: 15px;
+        
+    }
+
+    .skill-unit{
+        width: 155px;
+        overflow-x: auto;
+    }
+
+    .skill-unit > h3{
+        font-size: 12px;
+    }
+    
+    .personzoid-exp > h2{
+        padding-top: 60px;
+        width: 350px;
+    }
+
+    .dessertlux-exp{
+        word-wrap: break-word;
+        padding: 20px;
+        font-size: 15px;
+        width: 350px;
+    }
+
+  }
+
 body{
     width: 100vw;
     margin-top: 2.5%;
@@ -22,10 +72,11 @@ nav{
 .overview{
     background-color: #ccd8eb;
     margin-bottom: 5%;
+    height: auto;
 }
 
 h1{
-    padding: 0.5rem;
+    padding: 0.6rem;
     font-weight: bolder;
     font-family: 'Montserrat Alternates', sans-serif;
 }
@@ -43,9 +94,8 @@ p, pre{
     font-family: 'Oxygen Mono', monospace;
 }
 
-.overview pre{
+.overview-text{
     text-align: left;
-    margin-left: 23%;
     padding-block: 2%;
     font-size: 20px;
 }
@@ -85,8 +135,7 @@ p, pre{
     color: rgb(255, 234, 42);
     position: absolute;
     background-color: #3d385396;
-    top: 95%;
-    z-index: 2s;
+    z-index: 2;
     width: 100vw;
 }
 
@@ -94,7 +143,9 @@ p, pre{
     padding-top: 3%;
     background-color: black;
     display: grid;
-    grid-template-columns: 45% 55%;
+    /* grid-template-columns: 45% 55%; */
+    grid-template-columns: repeat(auto-fit, minmax(450px, 1fr));
+
 }
 
 .personzoid-exp{
@@ -127,14 +178,9 @@ p, pre{
 .dessertlux{
     background-color: #0c2345;
     display: grid;
-    grid-template-columns: 55% 45%;
+    grid-template-columns: repeat(auto-fit, minmax(450px, 1fr));
+    padding-left: 10px;
 }
-
-.dessertlux-imgs{
-    margin-left: 10rem;
-    width: 100%;
-}
-
 
 .dessertlux-exp{
     padding-top: 5%;
